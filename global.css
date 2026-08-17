@@ -1,0 +1,74 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  --color-border: #e2e8f0;
+  --color-primary: #3b82f6;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #8b5cf6;
+  --color-secondary-foreground: #ffffff;
+  --color-accent: #14b8a6;
+  --color-accent-foreground: #042f2e;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+
+  --spacing-gutter: 1rem;
+  --spacing-screen: 1.5rem;
+  --spacing-section: 2rem;
+  --spacing-tap: 2.75rem;
+  --spacing-13: 3.25rem;
+  --spacing-18: 4.5rem;
+}
+
+/* Runtime defaults so the variables resolve on native and can be overridden
+   with VariableContextProvider. */
+:root {
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  --color-border: #e2e8f0;
+  --color-primary: #3b82f6;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #8b5cf6;
+  --color-secondary-foreground: #ffffff;
+  --color-accent: #14b8a6;
+  --color-accent-foreground: #042f2e;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+
+  @media (prefers-color-scheme: dark) {
+    --color-background: #0b1120;
+    --color-foreground: #f8fafc;
+    --color-card: #111827;
+    --color-card-foreground: #f8fafc;
+    --color-muted: #1e293b;
+    --color-muted-foreground: #94a3b8;
+    --color-border: #1e293b;
+    --color-primary: #60a5fa;
+    --color-primary-foreground: #0b1120;
+    --color-secondary: #a78bfa;
+    --color-secondary-foreground: #0b1120;
+    --color-accent: #2dd4bf;
+    --color-accent-foreground: #042f2e;
+    --color-destructive: #f87171;
+    --color-destructive-foreground: #0b1120;
+    --color-success: #4ade80;
+    --color-warning: #fbbf24;
+  }
+}
